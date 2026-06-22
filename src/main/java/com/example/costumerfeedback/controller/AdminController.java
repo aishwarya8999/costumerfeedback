@@ -30,7 +30,7 @@ public class AdminController
         return ResponseEntity.ok(feedbackService.getFeedbackById(id));
     }
 
-    // FIX: missing edit endpoint — spec requires View, Edit, Delete for admin
+
     @PutMapping("/feedback/{id}")
     public ResponseEntity<Feedback> updateFeedback(@PathVariable Long id,
                                                     @RequestBody FeedbackRequest request)
